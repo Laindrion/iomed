@@ -1,4 +1,34 @@
 $(document).ready(function () {
+
+  $('#profile > a').click(() => {
+    $('.profile__modal').toggleClass('active');
+  })
+
+  /**********************
+    **********************
+        accordion
+    **********************
+    **********************/
+  const accordionBtns = document.querySelectorAll(".dashboard__sidebar > ul > li > a");
+
+  accordionBtns.forEach((btn) => {
+
+    btn.addEventListener("click", () => {
+      /* IF CLICKED ELEMENT CONTAINS THIS CLASS THAN REMOVE IT */
+      if (btn.classList.contains("active")) {
+        btn.classList.remove("active");
+      } else {
+        const accordionBtnWithIsOpen =
+          document.querySelectorAll(".dashboard__sidebar .active");
+        accordionBtnWithIsOpen.forEach((accordionTitleWithIsOpen) => {
+          accordionTitleWithIsOpen.classList.remove("active");
+        });
+        btn.classList.add("active");
+      }
+    });
+
+  });
+
   /**********************
    **********************
      MODALS 
@@ -26,6 +56,7 @@ $(document).ready(function () {
     } else {
       $(".modal__stage-1").addClass("active");
     }
+    $('.dashboard__sidebar').removeClass('active')
   });
 
   $(".no").click(() => {
@@ -49,12 +80,17 @@ $(document).ready(function () {
   });
 
 
+  $('.burger__btn').click(() => {
+    $('.dashboard__sidebar').addClass('active');
+  })
+
+  /* Clone */
   $(".modal__add-calc__inner").on("click", ".item-add", function () {
     var newItem = $(".modal__add-calc__inner-item:first").clone();
     newItem.find('input[type="text"]').val("");
     $(".modal__add-calc__inner").append(newItem);
   });
-
+  /* If less than 1, do not remove */
   $(".modal__add-calc__inner").on("click", ".item-remove", function () {
     if ($(".modal__add-calc__inner-item").length > 1) {
       $(this).closest(".modal__add-calc__inner-item").remove();
@@ -74,7 +110,7 @@ $(document).ready(function () {
     );
 
     let modalAddPhone = modalAdd.querySelector('#phone');
-    console.log(modalAddPhone)
+    /* console.log(modalAddPhone) */
     modalAddPhone.addEventListener('input', function () {
       // Remove non-numeric and non-plus sign characters
       var sanitizedValue = modalAddPhone.value.replace(/[^0-9+]/g, "");

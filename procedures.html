@@ -13,13 +13,18 @@
 <body class="dashboard">
     <header class="dashboard__header">
         <nav class="menu">
+            <button class="burger__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
-                <li id="lang">
+                <li class="lang">
                     <a href="#">
                         <img src="images/globe-icon.svg" alt="">
                         RU
                     </a>
-                    <ul id="lang-inner">
+                    <ul class="lang-inner">
                         <li>
                             <a href="#">
                                 UZ
@@ -28,20 +33,20 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a href="#" id="color-mode">
+                <li class="color-mode">
+                    <a href="#">
                         <img src="images/sun-icon.svg" alt="">
                     </a>
                 </li>
 
-                <li>
-                    <a href="#" id="notification">
+                <li id="notification">
+                    <a href="#">
                         <img src="images/notification-icon.svg" alt="">
                     </a>
                 </li>
 
-                <li>
-                    <a href="#" id="profile">
+                <li id="profile">
+                    <a href="#">
                         <span class="profile__img">
                             <img src="images/user-image.png" alt="">
                         </span>
@@ -50,19 +55,46 @@
                             Диёр Ниязимбетов
                         </span>
                     </a>
+                    <span class="profile__modal">
+                        <a href="#">
+                            <img src="../images/settings.svg" alt=""> <span>Настройки</span>
+                        </a>
+                        <a href="#">
+                            <img src="../images/log-out.svg" alt=""> <span>Выйти</span>
+                        </a>
+                    </span>
                 </li>
             </ul>
         </nav>
     </header>
 
 <main class="main">
-    <aside class="dashobard__sidebar">
+    <aside class="dashboard__sidebar">
+    
+        <button class="close">
+            <img src="images/close.svg" alt="">
+        </button>
         <div class="logo">
             <img src="images/logo.svg" alt="">
+    
+            <ul>
+                <li class="lang">
+                    <a href="#">
+                        <img src="images/globe-icon.svg" alt="">
+                        RU
+                    </a>
+                    <ul class="lang-inner">
+                        <li>
+                            <a href="#">
+                                UZ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     
         <ul>
-    
             <li>
                 <a href="#">
                     <img src="images/home-icon.svg" alt="">
@@ -92,12 +124,6 @@
     
                     <li>
                         <a href="#">
-                            Список инвентаря
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#">
                             Персонал
                         </a>
                     </li>
@@ -116,6 +142,26 @@
                     <img src="images/box-icon.svg" alt="">
                     Склад
                 </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                </ul>
             </li>
     
             <li>
@@ -123,6 +169,26 @@
                     <img src="images/clock-icon.svg" alt="">
                     Рабочий график
                 </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                </ul>
             </li>
     
             <li>
@@ -130,6 +196,26 @@
                     <img src="images/hospital-icon.svg" alt="">
                     Управление клиникой
                 </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                </ul>
             </li>
     
             <li>
@@ -137,9 +223,45 @@
                     <img src="images/user-icon.svg" alt="">
                     Панель администратора
                 </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Список инвентаря
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                </ul>
             </li>
     
         </ul>
+    
+        <div class="sidebar__footer">
+            <ul>
+                <li class="color-mode">
+                    <a href="#">
+                        <img src="images/sun-icon.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </aside>
     <section class="procedures">
         <div class="section__top">
@@ -201,19 +323,19 @@
         <div class="dashboard__table">
             <table>
                 <thead>
-                    <th style="width: 4%;">
+                    <th style="">
                         ID
                     </th>
-                    <th style="width: 13%;">
+                    <th style="">
                         Пациент
                     </th>
-                    <th style="width: 17%;">
+                    <th style="">
                         Врач
                     </th>
-                    <th style="width: 19%;">
+                    <th style="">
                         Услуги
-                    </th style="width: 16%;">
-                    <th>
+                    </th>
+                    <th style="">
                         Комментарий
                     </th>
                     <th>
@@ -580,7 +702,7 @@
             <form class="row modal__add-form" action="">
                 <!-- MODAL INNER -->
                 <div class="row modal__add-inner modal__stage-1 active">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Пациент
                             <select name="" id="patient" required>
@@ -592,28 +714,28 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Имя
                             <input type="text" id="name" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Фамилия
                             <input type="text" id="second-name" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Отчество
                             <input type="text" id="surname" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Пол
                             <select name="" id="gender" required>
@@ -625,28 +747,28 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Дата рождения
                             <input type="date" id="birth-date" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Телефон
                             <input type="text" id="phone" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Email
                             <input type="email" id="email" required>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Источник продажи
                             <select name="" id="sales-source" required>
@@ -658,21 +780,21 @@
                         </label>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
                         <label for="">
                             Адрес
                             <textarea name="" id="adress" cols="30" rows="10" required></textarea>
                         </label>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
                         <label for="">
                             Комментарий
                             <textarea name="" id="comment" cols="30" rows="10"></textarea>
                         </label>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <label for="">
                             Статус
                             <select name="" id="status">
@@ -688,50 +810,50 @@
                 <!-- MODAL CALCULATOR -->
                 <div class="modal__add-calc modal__stage-2">
                     <div class="row modal__add-calc__top">
-                        <div class="col-lg-2">
+                        <div class="col-md-2">
                             Назначения
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-md-2">
                             Врач
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-md-2">
                             Цена
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-md-2">
                             Скидка %
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-md-2">
                             Итого
                         </div>
-                        <div class="col-lg-2"></div>
+                        <div class="col-md-2"></div>
                     </div>
                     <div class="modal__add-calc__inner">
 
                         <div class="row modal__add-calc__inner-item">
-                            <div class="col-lg-2">
+                            <div class="col-md-2">
                                 <select name="" id="" required>
                                     <option value="0">Select</option>
                                     <option value="1">One to two</option>
                                     <option value="2">Two to three</option>
                                 </select>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-md-2">
                                 <select name="" id="" required>
-                                    <option value="0">Select</option>
+                                    <option value="0">Select</soption>
                                     <option value="1">One to two</option>
                                     <option value="2">Two to three</option>
                                 </select>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-md-2">
                                 <input class="modal__add-price" type="text">
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-md-2">
                                 <input class="modal__add-discount" type="text">
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-md-2">
                                 <input class="modal__add-total__inner" text="text" disabled>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-md-2">
                                 <button class="item-remove" type="button">
                                     -
                                 </button>
@@ -807,7 +929,6 @@
     </div>
 </main>
 <script src="js/main.min.js"></script>
-<script src="js/script.js"></script>
 </body>
 
 </html>
