@@ -14631,11 +14631,24 @@ img {
   background: -o-linear-gradient(358deg, #328E81 -18.54%, #2A7A74 93.57%);
   background: linear-gradient(92deg, #328E81 -18.54%, #2A7A74 93.57%);
   margin-bottom: 10px;
+  /* Show the ul that is near to a */
+}
+.dashboard__sidebar > ul > li:has(> ul) > a.active > img {
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
 }
 .dashboard__sidebar > ul > li:has(> ul) > a.active::after {
   -webkit-transform: translateY(-50%) rotate(180deg);
   -ms-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
 }
 .dashboard__sidebar > ul > li:has(> ul) > a.active + ul {
   display: block;
