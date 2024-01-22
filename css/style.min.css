@@ -13407,7 +13407,7 @@ html {
 
 body {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 2.440125rem;
   color: #637083;
@@ -13449,7 +13449,7 @@ button {
 
 p {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 2.440125rem;
   color: #000;
@@ -13529,7 +13529,7 @@ img {
   display: flex;
 }
 .dashboard section {
-  padding-left: 19.475rem;
+  padding-left: 17.475rem;
   padding-right: 1.25rem;
   width: 100%;
 }
@@ -13611,7 +13611,7 @@ img {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 15px 20px;
   background: #fff;
   border-bottom: 1px solid #D8E2EF;
   padding-left: 17.875rem;
@@ -13719,7 +13719,7 @@ img {
   align-items: center;
   gap: 5px;
   font-family: "Futura PT", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5625rem;
   color: #637083;
@@ -13793,7 +13793,7 @@ img {
 }
 .dashboard .section__top h1 {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5625rem;
   color: #1E2228;
@@ -13825,14 +13825,14 @@ img {
 .dashboard .section__filters h3 {
   margin-right: 20px;
   font-family: "Futura PT", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.25rem;
   color: #1E2228;
 }
 .dashboard .section__filters .select2-container--default .select2-selection--single .select2-selection__rendered {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   line-height: 2.375rem;
   color: #637083;
@@ -13840,7 +13840,7 @@ img {
 .dashboard .section__filters input {
   width: 200px;
   font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   line-height: 2.375rem;
   color: #637083;
@@ -13858,7 +13858,7 @@ img {
   /* table-layout: fixed; */
   /* border-spacing: 0; */
   font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.25rem;
   color: #637083;
@@ -13883,7 +13883,7 @@ img {
 }
 .dashboard__table table th {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.5625rem;
   color: #fff;
@@ -13933,7 +13933,7 @@ img {
 }
 .dashboard .status {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.5625rem;
   color: #fff;
@@ -14035,7 +14035,7 @@ img {
 }
 .dashboard .modal__add h1 {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5625rem;
   color: #1E2228;
@@ -14094,7 +14094,7 @@ img {
 }
 .dashboard .modal__add .total__cover {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5625rem;
   color: #1E2228;
@@ -14108,7 +14108,7 @@ img {
 }
 .dashboard .modal__add-calc__top {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.5625rem;
   color: #fff;
@@ -14137,7 +14137,7 @@ img {
 }
 .dashboard .modal__add-calc__inner button {
   font-family: "Futura PT", sans-serif;
-  font-size: 3.125rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 0.625rem;
   color: #9F1D1D;
@@ -14217,14 +14217,14 @@ img {
 }
 .dashboard .modal__info-name {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.5625rem;
   color: #1E2228;
 }
 .dashboard .modal__info-subtitle {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5625rem;
   color: #1E2228;
@@ -14261,14 +14261,14 @@ img {
 }
 .dashboard .modal__info-item h3 {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   line-height: 0.75rem;
   color: #B5B5B5;
 }
 .dashboard .modal__info-item strong {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 0.9375rem;
   color: #1E2228;
@@ -14288,7 +14288,7 @@ img {
 }
 .dashboard .modal__info-inner span {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.125rem;
   color: #B5B5B5;
@@ -14318,14 +14318,14 @@ img {
   align-items: center;
   gap: 10px;
   font-family: "Futura PT", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.125rem;
   color: #1E2228;
 }
 .dashboard .modal__info-inner > div:last-child span {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 0.625rem;
   color: #fff;
@@ -14350,7 +14350,7 @@ img {
 }
 .dashboard .modal__info-btns button {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.5625rem;
   color: #277771;
@@ -14398,7 +14398,7 @@ img {
 }
 .dashboard .modal__delete h1 {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.75rem;
   color: #1E2228;
@@ -14417,7 +14417,7 @@ img {
 }
 .dashboard .modal__delete > div button {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5625rem;
   color: #277771;
@@ -14464,7 +14464,7 @@ img {
 }
 .dashboard .modal__success h1 {
   font-family: "Futura PT", sans-serif;
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.75rem;
   color: #1E2228;
@@ -14562,7 +14562,7 @@ img {
 }
 .dashboard__sidebar > ul li a {
   font-family: "Futura PT", sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
   color: #637083;
@@ -14572,7 +14572,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   padding: 13px 30px 12px 14px;
   border-radius: 8px;
   -webkit-transition: 0.4s all;
@@ -14596,8 +14596,35 @@ img {
 .dashboard__sidebar > ul > li:has(> ul) {
   /* Second level */
 }
+.dashboard__sidebar > ul > li:has(> ul) a.active {
+  color: #fff;
+  background: -o-linear-gradient(358deg, #328E81 -18.54%, #2A7A74 93.57%);
+  background: linear-gradient(92deg, #328E81 -18.54%, #2A7A74 93.57%);
+  margin-bottom: 10px;
+}
+.dashboard__sidebar > ul > li:has(> ul) a.active > img {
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.dashboard__sidebar > ul > li:has(> ul) a.active::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
 .dashboard__sidebar > ul > li:has(> ul) > ul {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.4s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  -o-transition: 0.4s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  transition: 0.4s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
 }
 .dashboard__sidebar > ul > li:has(> ul) > ul a {
   padding-left: 40px;
@@ -14626,33 +14653,6 @@ img {
 .dashboard__sidebar > ul > li:has(> ul) > a {
   position: relative;
 }
-.dashboard__sidebar > ul > li:has(> ul) > a.active {
-  color: #fff;
-  background: -o-linear-gradient(358deg, #328E81 -18.54%, #2A7A74 93.57%);
-  background: linear-gradient(92deg, #328E81 -18.54%, #2A7A74 93.57%);
-  margin-bottom: 10px;
-  /* Show the ul that is near to a */
-}
-.dashboard__sidebar > ul > li:has(> ul) > a.active > img {
-  -webkit-filter: brightness(3);
-  filter: brightness(3);
-  -webkit-transition: 0.4s all;
-  -o-transition: 0.4s all;
-  transition: 0.4s all;
-}
-.dashboard__sidebar > ul > li:has(> ul) > a.active::after {
-  -webkit-transform: translateY(-50%) rotate(180deg);
-  -ms-transform: translateY(-50%) rotate(180deg);
-  transform: translateY(-50%) rotate(180deg);
-  -webkit-filter: brightness(3);
-  filter: brightness(3);
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-}
-.dashboard__sidebar > ul > li:has(> ul) > a.active + ul {
-  display: block;
-}
 .dashboard__sidebar > ul > li:has(> ul) > a::after {
   content: "";
   position: absolute;
@@ -14661,7 +14661,7 @@ img {
   background-repeat: no-repeat;
   width: 0.875rem;
   height: 0.5625rem;
-  right: 12px;
+  right: 8px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
