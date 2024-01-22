@@ -13496,77 +13496,6 @@ img {
   object-fit: cover;
 }
 
-.custom-select {
-  position: relative;
-}
-
-.custom-select select {
-  display: none;
-  /*hide original SELECT element:*/
-}
-
-.select-selected {
-  background-color: DodgerBlue;
-}
-
-/*style the arrow inside the select element:*/
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/*style the items (options), including the selected item:*/
-.select-items div,
-.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/*style items (options):*/
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/*hide the items when the select box is closed:*/
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover,
-.same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 /**********************
     **********************
      DASHBOARD
@@ -13860,7 +13789,7 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 1.875rem;
+  padding-top: 0.875rem;
 }
 .dashboard .section__top h1 {
   font-family: "Futura PT", sans-serif;
@@ -13889,12 +13818,32 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 9px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .dashboard .section__filters h3 {
   margin-right: 20px;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #1E2228;
+}
+.dashboard .section__filters .select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 2.375rem;
+  color: #637083;
 }
 .dashboard .section__filters input {
   width: 200px;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 2.375rem;
+  color: #637083;
 }
 .dashboard__table {
   width: 100%;
@@ -13908,6 +13857,11 @@ img {
   margin-bottom: 5px;
   /* table-layout: fixed; */
   /* border-spacing: 0; */
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #637083;
 }
 .dashboard__table table thead {
   position: relative;
@@ -13955,10 +13909,10 @@ img {
 .dashboard__table table tbody tr td {
   vertical-align: middle;
   border: 1px solid #E5E5E5;
-  padding-left: 5px;
   padding-top: 9px;
   padding-bottom: 7px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .dashboard__table table tbody tr td:not(:first-child) {
   padding-left: 20px;
@@ -14556,7 +14510,7 @@ img {
   flex-direction: column;
   padding: 20px;
   background: #fff;
-  max-width: 273px;
+  max-width: 17.0625rem;
   min-height: 100vh;
   height: 100%;
   position: fixed;
@@ -14588,7 +14542,7 @@ img {
   align-items: center;
 }
 .dashboard__sidebar .logo img:first-child {
-  width: 48%;
+  width: 65%;
   height: 100%;
 }
 .dashboard__sidebar .logo > ul {
@@ -14602,7 +14556,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 18px;
+  gap: 7px;
   overflow-y: auto;
   /* ALL li's that has ul inside */
 }
@@ -14610,7 +14564,7 @@ img {
   font-family: "Futura PT", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5625rem;
+  line-height: 1.25rem;
   color: #637083;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14618,8 +14572,8 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 20px;
-  padding: 11px 16px 12px 14px;
+  gap: 14px;
+  padding: 13px 30px 12px 14px;
   border-radius: 8px;
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
@@ -14634,8 +14588,8 @@ img {
   background: rgba(43, 125, 118, 0.2);
 }
 .dashboard__sidebar > ul li a img {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -14692,8 +14646,8 @@ img {
   background-image: url("../images/arrow-icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 0.75rem;
-  height: 0.4375rem;
+  width: 0.875rem;
+  height: 0.5625rem;
   right: 12px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -14815,7 +14769,7 @@ img {
 }
 @media (max-width: 325px) {
   .dashboard .section__filters input {
-    width: 100%;
+    width: 100% !important;
   }
   .dashboard .section__filters .select2 {
     width: 100% !important;
