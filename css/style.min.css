@@ -14196,9 +14196,9 @@ img {
   margin-left: auto;
   padding: 65px 15px 30px 15px;
   overflow-y: auto;
-  -webkit-transition: 0.4s all;
-  -o-transition: 0.4s all;
-  transition: 0.4s all;
+  -webkit-transition: 0.4s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  -o-transition: 0.4s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  transition: 0.4s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
   /* width */
   /* Track */
   /* Handle */
