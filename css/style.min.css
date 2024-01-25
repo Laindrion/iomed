@@ -13529,7 +13529,7 @@ img {
   display: flex;
 }
 .dashboard section {
-  padding-left: 17.475rem;
+  padding-left: 17.875rem;
   padding-right: 1.25rem;
   width: 100%;
 }
@@ -14517,7 +14517,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 20px;
+  padding: 1.25rem;
   background: #fff;
   max-width: 17.0625rem;
   min-height: 100vh;
