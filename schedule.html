@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iomed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="dashboard">
+    <header class="dashboard__header">
+        <nav class="menu">
+            <button class="burger__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li class="lang">
+                    <a href="#">
+                        <img src="images/globe-icon.svg" alt="">
+                        RU
+                    </a>
+                    <ul class="lang-inner">
+                        <li>
+                            <a href="#">
+                                UZ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="color-mode">
+                    <a href="#">
+                        <img src="images/sun-icon.svg" alt="">
+                    </a>
+                </li>
+
+                <li id="notification">
+                    <a href="#">
+                        <img src="images/notification-icon.svg" alt="">
+                    </a>
+                </li>
+
+                <li id="profile">
+                    <a href="#">
+                        <span class="profile__img">
+                            <img src="images/user-image.png" alt="">
+                        </span>
+
+                        <span class="profile__name">
+                            Диёр Ниязимбетов
+                        </span>
+                    </a>
+                    <span class="profile__modal">
+                        <a href="#">
+                            <img src="images/settings.svg" alt=""> <span>Настройки</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/log-out.svg" alt=""> <span>Выйти</span>
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main class="main">
+    <aside class="dashboard__sidebar">
+    
+        <button class="close">
+            <img src="images/close.svg" alt="">
+        </button>
+        <div class="logo">
+            <img src="images/logo.svg" alt="">
+    
+            <ul>
+                <li class="lang">
+                    <a href="#">
+                        <img src="images/globe-icon.svg" alt="">
+                        RU
+                    </a>
+                    <ul class="lang-inner">
+                        <li>
+                            <a href="#">
+                                UZ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/home-icon.svg" alt="">
+                    Главная
+                </a>
+            </li>
+    
+            <li>
+                <a class="active" href="#">
+                    <img src="images/calendar-icon.svg" alt="">
+                    Назначение процедур
+                </a>
+            </li>
+    
+            <li>
+                <a href="#">
+                    <img src="images/book-icon.svg" alt="">
+                    Инвентаризация
+                </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+    
+                </ul>
+    
+            </li>
+    
+            <li>
+                <a href="#">
+                    <img src="images/box-icon.svg" alt="">
+                    Склад
+                </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    
+            <li>
+                <a href="#">
+                    <img src="images/clock-icon.svg" alt="">
+                    Рабочий график
+                </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    
+            <li>
+                <a href="#">
+                    <img src="images/hospital-icon.svg" alt="">
+                    Управление клиникой
+                </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    
+            <li>
+                <a href="#">
+                    <img src="images/user-icon.svg" alt="">
+                    Панель администратора
+                </a>
+    
+                <ul>
+                    <li>
+                        <a href="#">
+                            Моё оборудование
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Список инвентаря
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Персонал
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Измерения
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    
+        </ul>
+    
+        <div class="sidebar__footer">
+            <ul>
+                <li class="color-mode">
+                    <a href="#">
+                        <img src="images/sun-icon.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="schedule">
+        <div class="section__filters">
+            <div>
+                <h3>
+                    График работы
+                </h3>
+
+                <select name="" id="">
+                    <option value="0">
+                        Отделение
+                    </option>
+                    <option value="1">
+                        One to three
+                    </option>
+                </select>
+
+                <select name="" id="">
+                    <option value="0">
+                        Роли
+                    </option>
+                    <option value="1">
+                        One to three
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="schedule__wrapper">
+            <div class="schedule__item">
+                <span>
+                    Пн
+                </span>
+
+                <div>
+                    <h4>
+                        Тошев Жасур Гайратович
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+
+                <div>
+                    <h4>
+                        Мукаддам Турдикуловна
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="schedule__item">
+                <span>
+                    Вт
+                </span>
+
+                <div>
+                    <h4>
+                        Тошев Жасур Гайратович
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+
+                <div>
+                    <h4>
+                        Мукаддам Турдикуловна
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="schedule__item">
+                <span>
+                    Ср
+                </span>
+
+                <div>
+                    <h4>
+                        Тошев Жасур Гайратович
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+
+                <div>
+                    <h4>
+                        Мукаддам Турдикуловна
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="schedule__item">
+                <span>
+                    Чт
+                </span>
+
+                <div>
+                    <h4>
+                        Тошев Жасур Гайратович
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+
+                <div>
+                    <h4>
+                        Мукаддам Турдикуловна
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="schedule__item">
+                <span>
+                    Пт
+                </span>
+
+                <div>
+                    <h4>
+                        Тошев Жасур Гайратович
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+
+                <div>
+                    <h4>
+                        Мукаддам Турдикуловна
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="schedule__item">
+                <span>
+                    Сб
+                </span>
+
+                <div>
+                    <h4>
+                        Тошев Жасур Гайратович
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+
+                <div>
+                    <h4>
+                        Мукаддам Турдикуловна
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="schedule__item">
+                <span>
+                    Вс
+                </span>
+
+                <div>
+                    <h4>
+                        Тошев Жасур Гайратович
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+
+                <div>
+                    <h4>
+                        Мукаддам Турдикуловна
+                    </h4>
+                    <div>
+                        <span>
+                            Стаж работы: 3
+                        </span>
+                        <span>
+                            Категория: Вышая
+                        </span>
+                    </div>
+                    <h4>
+                        8:00 - 15:00
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<script src="js/main.min.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>
