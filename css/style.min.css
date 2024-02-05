@@ -13745,7 +13745,36 @@ img {
   width: 22px;
   height: 22px;
 }
-.dashboard .lang a {
+.dashboard .lang {
+  position: relative;
+}
+.dashboard .lang-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 5px;
+  width: 78%;
+  right: 0;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-right: 18px;
+  bottom: -2rem;
+  -webkit-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.04);
+  -webkit-transition: 0.2s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  -o-transition: 0.2s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  transition: 0.2s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  visibility: hidden;
+  opacity: 0;
+}
+.dashboard .lang > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13756,7 +13785,7 @@ img {
   padding-right: 18px;
   position: relative;
 }
-.dashboard .lang a::before {
+.dashboard .lang > a::before {
   content: "";
   position: absolute;
   background-image: url("../images/arrow-icon.svg");
@@ -13774,8 +13803,13 @@ img {
   width: 23px;
   height: 23px;
 }
-.dashboard .lang-inner {
-  display: none;
+.dashboard .lang.active .lang-inner {
+  visibility: visible;
+  opacity: 1;
+  bottom: -2.875rem;
+  -webkit-transition: 0.2s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  -o-transition: 0.2s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
+  transition: 0.2s all cubic-bezier(0.46, -0.19, 0.07, 0.82);
 }
 .dashboard .color-mode a {
   display: -webkit-box;
@@ -14137,6 +14171,34 @@ img {
 }
 .dashboard .modal__add .total__cover .total {
   font-weight: 700;
+}
+.dashboard .modal__add .checkboxes > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dashboard .modal__add .checkboxes > label > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.dashboard .modal__add .checkboxes > label > span > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 10px;
+}
+.dashboard .modal__add .checkboxes > label > span > label input {
+  width: 18px;
+  height: 18px;
 }
 .dashboard .modal__add-calc__top {
   font-family: "Futura PT", sans-serif;
