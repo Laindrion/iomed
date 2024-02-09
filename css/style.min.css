@@ -13888,6 +13888,9 @@ img {
   line-height: 2.375rem;
   color: #637083;
 }
+.dashboard .section__filters .select2 {
+  max-width: 199px;
+}
 .dashboard .section__filters input {
   width: 200px;
   font-family: "Futura PT", sans-serif;
@@ -13936,12 +13939,13 @@ img {
   font-family: "Futura PT", sans-serif;
   font-size: 0.9375rem;
   font-weight: 700;
-  line-height: 1.5625rem;
+  line-height: 1rem;
   color: #fff;
   /* background: $dashboard_table_gradient; */
-  padding-left: 10px;
+  padding-left: 14px;
   padding-top: 17px;
   padding-bottom: 16px;
+  vertical-align: middle;
 }
 .dashboard__table table th:not(:first-child) {
   /* min-width: 10%; */
@@ -14176,6 +14180,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .dashboard .modal__add .checkboxes > label > span {
   display: -webkit-box;
@@ -14195,6 +14201,8 @@ img {
   -ms-flex-direction: row;
   flex-direction: row;
   gap: 10px;
+  border: 1px solid transparent;
+  padding: 0 10px;
 }
 .dashboard .modal__add .checkboxes > label > span > label input {
   width: 18px;
@@ -14583,9 +14591,9 @@ img {
   padding-bottom: 130px;
 }
 .dashboard .schedule__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   gap: 17px;
   text-align: center;
   margin-top: 23px;
@@ -14599,7 +14607,7 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 11px;
-  max-width: 214px;
+  max-width: 100%;
 }
 .dashboard .schedule__item > span {
   font-family: "Futura PT", sans-serif;
@@ -14774,7 +14782,7 @@ img {
   color: #fff;
   background: -o-linear-gradient(358deg, #328E81 -18.54%, #2A7A74 93.57%);
   background: linear-gradient(92deg, #328E81 -18.54%, #2A7A74 93.57%);
-  margin-bottom: 10px;
+  /*  margin-bottom: 10px; */
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
@@ -14824,7 +14832,11 @@ img {
   -o-transition: 0.4s all;
   transition: 0.4s all;
 }
-.dashboard__sidebar > ul > li:has(> ul) > ul a:hover:before, .dashboard__sidebar > ul > li:has(> ul) > ul a.active {
+.dashboard__sidebar > ul > li:has(> ul) > ul a.active {
+  color: #2E877E;
+  background: rgba(43, 125, 118, 0.2);
+}
+.dashboard__sidebar > ul > li:has(> ul) > ul a:hover:before, .dashboard__sidebar > ul > li:has(> ul) > ul a.active:before {
   opacity: 1;
 }
 .dashboard__sidebar > ul > li:has(> ul) > a {
@@ -14854,12 +14866,6 @@ img {
        MEDIA QUERIES
     **********************
 **********************/
-@media (max-width: 1910px) {
-  .schedule__wrapper {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
 @media (max-width: 1604px) {
   html {
     font-size: 15px;
@@ -14875,6 +14881,25 @@ img {
     font-size: 13px;
   }
 }
+@media (max-width: 1392px) {
+  .dashboard .schedule__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    place-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .dashboard .schedule__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 810px) {
+  .dashboard .schedule__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 765px) {
   .dashboard .modal__inner {
     padding-left: 20px;
@@ -14884,6 +14909,9 @@ img {
 @media (max-width: 745px) {
   .dashboard__header {
     padding-left: 1.875rem;
+  }
+  .dashboard .schedule__wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
   .dashboard .menu {
     display: -webkit-box;
@@ -14937,6 +14965,11 @@ img {
     padding-left: 1.875rem;
   }
 }
+@media (max-width: 600px) {
+  .dashboard .schedule__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 500px) {
   .section__top {
     -webkit-box-orient: vertical;
@@ -14961,6 +14994,9 @@ img {
   }
   .dashboard .modal__add .next {
     margin-right: auto;
+  }
+  .dashboard .schedule__wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 325px) {

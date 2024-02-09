@@ -292,7 +292,7 @@
     <section class="warehouses">
         <div class="section__top">
             <h1>
-                Склады
+                Поставщики
             </h1>
             <button class="section__top-btn">
                 Добавить
@@ -305,8 +305,7 @@
                 </h3>
                 <input class="" type="text" placeholder="Наименование">
                 <input class="" type="text" placeholder="Описание">
-                <input class="" type="text" placeholder="Локация" style="width: 202px;">
-                <input class="" type="text" placeholder="Телефон" style="width: 202px;">
+                <input class="" type="text" placeholder="Контакты">
             </div>
         </div>
 
@@ -314,33 +313,27 @@
         <div class="dashboard__table">
             <table>
                 <thead>
-                    <th style="width: 15%;">
+                    <th style="width: 22%;">
                         Наименование
                     </th>
-                    <th style="max-width: 35%;">
+                    <th style="max-width: 40%;">
                         Описание
                     </th>
-                    <th style="max-width: 20%;">
-                        Локация
+                    <th style="max-width: 9%;">
+                        Контакты
                     </th>
-                    <th style="max-width: 20%;">
-                        Телефон
-                    </th>
-                    <th></th>
+                    <th style="width: 6%;"></th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            Склад ОПБ
+                            Medizin Technik Gottmann
                         </td>
                         <td>
-                            Склад оборудования операционного блока GMC
+                            Немецкая компания поставщик
                         </td>
                         <td>
-                            Сергелийский район
-                        </td>
-                        <td>
-                            +998974304323
+                            +998 99 999 99 99
                         </td>
                         <td>
                             <span class="table__interactive">
@@ -359,16 +352,13 @@
 
                     <tr>
                         <td>
-                            Склад ОПБ
+                            Medizin Technik Gottmann
                         </td>
                         <td>
-                            Склад оборудования операционного блока GMC
+                            Немецкая компания поставщик
                         </td>
                         <td>
-                            Сергелийский район
-                        </td>
-                        <td>
-                            +998974304323
+                            +998 99 999 99 99
                         </td>
                         <td>
                             <span class="table__interactive">
@@ -387,16 +377,13 @@
 
                     <tr>
                         <td>
-                            Склад ОПБ
+                            Medizin Technik Gottmann
                         </td>
                         <td>
-                            Склад оборудования операционного блока GMC
+                            Немецкая компания поставщик
                         </td>
                         <td>
-                            Сергелийский район
-                        </td>
-                        <td>
-                            +998974304323
+                            +998 99 999 99 99
                         </td>
                         <td>
                             <span class="table__interactive">
@@ -427,7 +414,7 @@
             </button>
 
             <h1 class="modal__info-name">
-                СКЛАД ОПБ
+                Medizin Technik Gottmann
             </h1>
 
             <div>
@@ -437,40 +424,19 @@
                 <div class="modal__info-inner">
                     <div class="modal__info-inner__content">
                         <span>
-                            Тип счет-фактуры: <strong>Приход</strong>
+                            ID: <strong>404143</strong>
                         </span>
                         <span>
-                            Номер: <strong>00001</strong>
+                            Наименование: <strong>Medizin Technik Gottmann</strong>
                         </span>
                         <span>
-                            По дате: <strong>2023-11-29</strong>
+                            Статус: <strong>Текст</strong>
                         </span>
                         <span>
-                            Поставщик: <strong>Medizin Technik Gottmann</strong>
+                            Контакты: <strong>+998 99 999 99 99</strong>
                         </span>
                         <span>
-                            Со склада: <strong>(не задано)</strong>
-                        </span>
-                        <span>
-                            На склад: <strong> Склад ОПБ</strong>
-                        </span>
-                        <span>
-                            От пользователя: <strong>admin</strong>
-                        </span>
-                        <span>
-                            Пользователю:<strong>admin</strong>
-                        </span>
-                        <span>
-                            Дата создания: <strong>2023-11-29 21:15:45</strong>
-                        </span>
-                        <span>
-                            Дата обновления:<strong>2023-11-29 21:15:45</strong>
-                        </span>
-                        <span>
-                            Внесший изменение:<strong>admin</strong>
-                        </span>
-                        <span>
-                            Комментарий: <strong>Аппарат Лигашу, аксессуары Аппарата Лигашу</strong>
+                            Описание: <strong>Текст</strong>
                         </span>
                     </div>
                 </div>
@@ -492,7 +458,7 @@
                 <img src="images/close.svg" alt="">
             </button>
             <h1>
-                Добавить
+                Создать поставщиков
             </h1>
 
             <!-- ******* MODAL FORM ******* -->
@@ -500,89 +466,26 @@
                 <!-- MODAL INNER -->
                 <div class="row modal__add-inner active">
                     <div class="col-md-6">
-                        <label for="">
+                        <label for="name">
                             Наименование
-                            <select name="" id="">
-                                <option value="0">
-                                </option>
-                                <option value="1">
-                                    One to one
-                                </option>
-                                <option value="2">
-                                    One to two
-                                </option>
-                            </select>
+                            <input type="text" id="name">
                         </label>
                     </div>
+
                     <div class="col-md-6">
-                        <label for="">
-                            Локация
-                            <input type="text">
+                        <label for="contacts">
+                            Контакты
+                            <input type="text" id="contacts">
                         </label>
                     </div>
-                    <div class="col-md-12">
-                        <label for="">
+
+                    <div class="col-12">
+                        <label for="description">
                             Описание
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea name="" id="description" cols="30" rows="10"></textarea>
                         </label>
                     </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Телефон
-                            <input type="text" id="phone">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Почтовый индекс
-                            <input type="text" id="phone">
-                        </label>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="">
-                            Адрес
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Время открытия
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Время закрытия
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Рабочие дни
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Изображение
-                            <input type="file">
-                        </label>
-                    </div>
-                    <div class="col-md-4 checkboxes">
-                        <label for="">
-                            Статус
-                            <span>
-                                <label for="active">
-                                    <input type="radio" name="status" id="active">
-                                    Активный
-                                </label>
-                                <label for="not-active">
-                                    <input type="radio" name="status" id="not-active">
-                                    Неактивный
-                                </label>
-                            </span>
-                        </label>
-                    </div>
+
                     <div>
                         <button class="save" type="submit">
                             Сохранить
@@ -634,6 +537,7 @@
             </div>
         </div>
     </div>
+
 </main>
 <script src="js/main.min.js"></script>
 </body>

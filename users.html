@@ -292,7 +292,7 @@
     <section class="warehouses">
         <div class="section__top">
             <h1>
-                Склады
+                Пользователи склада
             </h1>
             <button class="section__top-btn">
                 Добавить
@@ -303,10 +303,10 @@
                 <h3>
                     Фильтры:
                 </h3>
-                <input class="" type="text" placeholder="Наименование">
-                <input class="" type="text" placeholder="Описание">
-                <input class="" type="text" placeholder="Локация" style="width: 202px;">
-                <input class="" type="text" placeholder="Телефон" style="width: 202px;">
+                <input class="" type="text" placeholder="Склад">
+                <input class="" type="text" placeholder="Пользователь">
+                <input class="" type="text" placeholder="Статус">
+                <input class="" type="text" placeholder="Дата создания">
             </div>
         </div>
 
@@ -315,16 +315,16 @@
             <table>
                 <thead>
                     <th style="width: 15%;">
-                        Наименование
+                        Склад
                     </th>
                     <th style="max-width: 35%;">
-                        Описание
+                        Пользователи
                     </th>
                     <th style="max-width: 20%;">
-                        Локация
+                        Дата создания
                     </th>
                     <th style="max-width: 20%;">
-                        Телефон
+                        Статус
                     </th>
                     <th></th>
                 </thead>
@@ -334,41 +334,13 @@
                             Склад ОПБ
                         </td>
                         <td>
-                            Склад оборудования операционного блока GMC
+                            Ройтман Р., Ройтман Р.
                         </td>
                         <td>
-                            Сергелийский район
+                            18.12.2023, 17:00
                         </td>
                         <td>
-                            +998974304323
-                        </td>
-                        <td>
-                            <span class="table__interactive">
-                                <a class="delete" href="#">
-                                    <img src="images/trash-icon.svg" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="images/pencil-icon.svg" alt="">
-                                </a>
-                                <a class="info" href="#">
-                                    <img src="images/info-icon.svg" alt="">
-                                </a>
-                            </span>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            Склад ОПБ
-                        </td>
-                        <td>
-                            Склад оборудования операционного блока GMC
-                        </td>
-                        <td>
-                            Сергелийский район
-                        </td>
-                        <td>
-                            +998974304323
+                            Текст
                         </td>
                         <td>
                             <span class="table__interactive">
@@ -390,13 +362,41 @@
                             Склад ОПБ
                         </td>
                         <td>
-                            Склад оборудования операционного блока GMC
+                            Ройтман Р., Ройтман Р.
                         </td>
                         <td>
-                            Сергелийский район
+                            18.12.2023, 17:00
                         </td>
                         <td>
-                            +998974304323
+                            Текст
+                        </td>
+                        <td>
+                            <span class="table__interactive">
+                                <a class="delete" href="#">
+                                    <img src="images/trash-icon.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/pencil-icon.svg" alt="">
+                                </a>
+                                <a class="info" href="#">
+                                    <img src="images/info-icon.svg" alt="">
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Склад ОПБ
+                        </td>
+                        <td>
+                            Ройтман Р., Ройтман Р.
+                        </td>
+                        <td>
+                            18.12.2023, 17:00
+                        </td>
+                        <td>
+                            Текст
                         </td>
                         <td>
                             <span class="table__interactive">
@@ -427,7 +427,7 @@
             </button>
 
             <h1 class="modal__info-name">
-                СКЛАД ОПБ
+                Подробнее
             </h1>
 
             <div>
@@ -499,9 +499,43 @@
             <form class="row modal__add-form" id="modal-form" action="">
                 <!-- MODAL INNER -->
                 <div class="row modal__add-inner active">
-                    <div class="col-md-6">
+                    <div>
+                        <div class="col-md-6">
+                            <label for="">
+                                Склад
+                                <select name="" id="">
+                                    <option value="0">
+                                    </option>
+                                    <option value="1">
+                                        One to one
+                                    </option>
+                                    <option value="2">
+                                        One to two
+                                    </option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-md-6 members">
+                            <label for="">
+                                Пользователь
+                                <select name="" id="">
+                                    <option value="0">
+                                    </option>
+                                    <option value="1">
+                                        One to one
+                                    </option>
+                                    <option value="2">
+                                        One to two
+                                    </option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
                         <label for="">
-                            Наименование
+                            Статус
                             <select name="" id="">
                                 <option value="0">
                                 </option>
@@ -514,75 +548,25 @@
                             </select>
                         </label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <label for="">
-                            Локация
+                            Дата создания
+                            <input type="text" id="">
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="">
+                            Дата обновления
                             <input type="text">
                         </label>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-12">
                         <label for="">
-                            Описание
+                            Время открытия
                             <textarea name="" id="" cols="30" rows="10"></textarea>
                         </label>
                     </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Телефон
-                            <input type="text" id="phone">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Почтовый индекс
-                            <input type="text" id="phone">
-                        </label>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="">
-                            Адрес
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Время открытия
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Время закрытия
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Рабочие дни
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="">
-                            Изображение
-                            <input type="file">
-                        </label>
-                    </div>
-                    <div class="col-md-4 checkboxes">
-                        <label for="">
-                            Статус
-                            <span>
-                                <label for="active">
-                                    <input type="radio" name="status" id="active">
-                                    Активный
-                                </label>
-                                <label for="not-active">
-                                    <input type="radio" name="status" id="not-active">
-                                    Неактивный
-                                </label>
-                            </span>
-                        </label>
-                    </div>
+
                     <div>
                         <button class="save" type="submit">
                             Сохранить
@@ -634,6 +618,7 @@
             </div>
         </div>
     </div>
+
 </main>
 <script src="js/main.min.js"></script>
 </body>
