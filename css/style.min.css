@@ -14086,6 +14086,28 @@ img {
   /* MODAL CALC STARTS */
   /* MODAL CALC ENDS */
 }
+.dashboard .modal__add .time_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+.dashboard .modal__add .time_inputs input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin-top: 2.6rem;
+}
+.dashboard .modal__add .time_inputs strong {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  color: #1E2228;
+  padding-top: 2.6rem;
+}
 .dashboard .modal__add.active {
   display: block;
 }
