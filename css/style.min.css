@@ -13381,7 +13381,7 @@ table {
 **********************/
 /* Titles */
 /* BTN */
-.dashboard .modal__add .col-12 .modal__stage-2.active button, .dashboard .modal__add .next, .dashboard .modal__add button:not(.close, .item-remove, .item-add, .next), .dashboard .section__top button {
+.dashboard .modal__add .col-12 .modal__stage-2.active button, .dashboard .modal__add .next, .dashboard .modal__add button:not(.close, .item-remove, .item-add, .next), .dashboard .apply__btn, .dashboard .reset__btn, .dashboard .section__top button {
   font-family: "Futura PT", sans-serif;
   font-size: 1.0625rem;
   font-weight: 700;
@@ -13899,6 +13899,15 @@ img {
   line-height: 2.375rem;
   color: #637083;
 }
+.dashboard .reset__btn {
+  background: transparent;
+  padding: 0.407rem 2.6875rem;
+  border: 1px solid #2E877E;
+  color: #2E877E;
+}
+.dashboard .apply__btn {
+  padding: 0.407rem 2.6875rem;
+}
 .dashboard__table {
   width: 100%;
   padding-top: 1.125rem;
@@ -14083,30 +14092,9 @@ img {
   padding-top: 35px;
   padding-bottom: 48px;
   width: 75%;
+  /* Schedule */
   /* MODAL CALC STARTS */
   /* MODAL CALC ENDS */
-}
-.dashboard .modal__add .time_inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 15px;
-}
-.dashboard .modal__add .time_inputs input[type=checkbox] {
-  width: 20px;
-  height: 20px;
-  margin-top: 2.6rem;
-}
-.dashboard .modal__add .time_inputs strong {
-  font-family: "Futura PT", sans-serif;
-  font-size: 1.0625rem;
-  font-weight: 700;
-  line-height: 1.5625rem;
-  color: #1E2228;
-  padding-top: 2.6rem;
 }
 .dashboard .modal__add.active {
   display: block;
@@ -14229,6 +14217,53 @@ img {
 .dashboard .modal__add .checkboxes > label > span > label input {
   width: 18px;
   height: 18px;
+}
+.dashboard .modal__add .schedule__list-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.dashboard .modal__add .schedule__list-add__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.dashboard .modal__add .schedule__list-add__inner-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.25rem;
+}
+.dashboard .modal__add .schedule__list-add__inner-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.dashboard .modal__add .schedule__list-add__inner-item div:first-child strong {
+  padding-top: 2rem;
+}
+.dashboard .modal__add .schedule__list-add__inner-item div:first-child input {
+  margin-top: 2rem;
+  width: 22px;
+  height: 22px;
+}
+.dashboard .modal__add .schedule__list-add__inner-item strong {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  color: #1E2228;
 }
 .dashboard .modal__add-calc__top {
   font-family: "Futura PT", sans-serif;
