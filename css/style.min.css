@@ -14685,6 +14685,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  gap: 1.25rem;
 }
 .dashboard .schedule__list-add__inner-item {
   display: -webkit-box;
