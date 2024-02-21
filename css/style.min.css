@@ -13498,6 +13498,154 @@ img {
 
 /**********************
     **********************
+       LOGIN
+    **********************
+**********************/
+.login {
+  padding-top: 9.125rem;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: 100px;
+  background-image: url("../images/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login img {
+  display: block;
+  margin-bottom: 3.375rem;
+  max-width: 279px;
+}
+.login h1 {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.5625rem;
+  color: #1E2228;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.1875rem;
+}
+.login__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.login__box {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.375rem 6.25rem;
+}
+.login__box .back {
+  position: absolute;
+  width: 1.4375rem;
+  height: 1.625rem;
+  left: 1.6875rem;
+  top: 1.375rem;
+}
+.login__box .back img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.login__box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  margin-bottom: 0.4375rem;
+}
+.login__box div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+}
+.login__box div label input {
+  border: 1px solid #E8E8E8;
+  padding: 0 0.5rem;
+  outline: none;
+  background: #F6F6F6;
+  border-radius: 0.5rem;
+}
+.login__box .login__link {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  color: #267570;
+  border-bottom: 1px solid #267570;
+  margin-bottom: 1.125rem;
+}
+.login__box .login__button {
+  position: relative;
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 900;
+  line-height: 1.5625rem;
+  color: #fff;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 17px 0px rgba(36, 112, 108, 0.25);
+  box-shadow: 0px 1px 17px 0px rgba(36, 112, 108, 0.25);
+  background: -webkit-gradient(linear, right top, left top, color-stop(-5.128%, rgb(36, 112, 108)), color-stop(95.726%, rgb(48, 141, 130)));
+  background: -o-linear-gradient(right, rgb(36, 112, 108) -5.128%, rgb(48, 141, 130) 95.726%);
+  background: linear-gradient(270deg, rgb(36, 112, 108) -5.128%, rgb(48, 141, 130) 95.726%);
+}
+.login__box .login__button.submit::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/login-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 0.75rem;
+  height: 1rem;
+  top: 50%;
+  left: 38%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.login__box .login__button.restore {
+  margin-top: 2.1875rem;
+}
+
+/**********************
+    **********************
      DASHBOARD
     **********************
 **********************/
@@ -15085,6 +15233,9 @@ img {
     flex-direction: column;
     gap: 20px;
   }
+  .login__box .login__button.submit::before {
+    left: 35%;
+  }
 }
 @media (max-width: 390px) {
   .dashboard .menu .lang {
@@ -15105,6 +15256,9 @@ img {
   .dashboard .schedule__wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+  .login__box .login__button.submit::before {
+    left: 30%;
+  }
 }
 @media (max-width: 325px) {
   .dashboard .section__filters input {
@@ -15113,10 +15267,16 @@ img {
   .dashboard .section__filters .select2 {
     width: 100% !important;
   }
+  .login__box .login__button.submit::before {
+    left: 25%;
+  }
 }
 @media (max-width: 300px) {
   .dashboard .schedule__list-add__inner-item input[type=time] {
     width: 10.5rem;
     padding-left: 4rem;
+  }
+  .login__box .login__button.submit::before {
+    left: 17%;
   }
 }
